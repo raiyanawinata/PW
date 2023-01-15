@@ -1,0 +1,82 @@
+html{
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-size: cover;
+  margin: 0;
+  padding: 12rem 0;
+}
+
+.nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2rem;
+            overflow-y: hidden;
+           
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.x .y .z h1{
+  color: lavender;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+}
+/* .x .y .z span{
+  color: rgb(255, 94, 94);
+} */
+.x .y .z .alpha{
+  /* color: #1E90CE; */
+  font-weight: 600;
+  letter-spacing: 6px;
+  font-size: 1.5rem;
+}
+
+.x .y .z p{
+  color: white;
+}
+
+.x .y .z .button{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.x .y .z a{
+  width: 140px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.826);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #534390;
+  transition: ease-in-out 300ms;
+}
+.x .y .z:hover a{
+  background-color: #524390c7;
+  color: white;
+  border-radius: 20px;
+}
+/* .x .y .z:after a{
+  background-color: #ffffffc7;
+  color: white;
+  border-radius: 20px;
+} */

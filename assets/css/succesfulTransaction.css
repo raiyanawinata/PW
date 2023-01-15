@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#000000;
+    --blackA:#111111;
+    --gold: #FFD700;
+    --white:#ffffff;
+    --purple:#534390;
+    --orange: #ffa500;
+    --sea-blue: #4dc4ff;
+  }
+
+  *{
+padding: 0;
+margin: 0;
+text-align: -webkit-center;
+}
+h1{
+font-weight: bold;
+}
+.container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container-flex-down{
+width: 100%;
+display: flex;
+flex-direction: column;
+margin: 0;
+align-items: center;
+justify-content: center;
+}
+.suc-container{
+display: flex;
+width: 100%;
+margin: 1rem;
+padding: auto;
+}
+.container-style{
+width: 100%;
+}
+.text-center img{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.paragraf-margin{
+margin-top: 30px;
+margin-left: 60px;
+margin-right: 60px;
+margin-bottom: 40px;
+}
+.text-center h1{
+font-size: 3rem;
+margin: 2rem 0;
+}
+.text-center h3{
+font-size: 2rem;
+}
+.text-center h4{
+font-size: 1.5rem;
+}
+.content{
+width: 50%;
+background-color: var(--purple); /* #534390*/    /*WARNA BACKGROUND YANG KOTAK BESAR*/
+color: white;
+padding: 20px;
+border-radius: 5%;
+}
+.content input{
+line-height: 2rem;
+}
+.content-img img{
+margin-top: 20px;
+width: 100%;
+}
+.mt-3{
+margin-top: 5rem;
+}
+            
+/* RESPONSIVE SCREEN------------------------------------------------------------------------ */
+@media screen and (max-width: 768px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;       
+        text-align: center; 
+    }
+    .paragraf-margin{
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .container-flex-down{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .suc-container{
+        display: flex;
+        width: 100%;
+        margin: 1rem;
+        padding: auto;
+    }
+        .content{
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .form-style{
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 2rem;
+            /* margin-right: 50px; */
+        }
+        .mt-3{
+            margin-top: 5rem;
+            }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-flex-down{
+        width: 100%;
+    }
+    .suc-container{
+        display: flex;
+        width: 100%;
+        margin: 1rem;
+        padding: auto;
+    }
+    .paragraf-margin{
+            margin: 0;
+            margin-bottom: 50px !important;
+        }
+        .text-center #succesH6{
+            margin-top: 20px;
+        }
+        .text-center img{
+            width: 120px;
+            height: 120px;
+        }
+        .content{
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .form-style{
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 2rem;
+            /* margin-right: 50px; */
+        }
+ 
+}

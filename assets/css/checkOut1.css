@@ -1,0 +1,142 @@
+/* LINE NO 56 Buat Ganti Warna Font */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+background-color: #534390;  /*COLOR BUTTON*/
+color: white;
+border: none;
+margin: 2rem 0 0 0;
+}
+/* .btn :hover{
+    color: lavender;
+    border: none;
+} */
+.container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+line-height: 2rem;
+}
+.full-container{
+display: flex;
+width: 100%;
+margin: 1rem;
+padding: auto;
+}
+.container-style{
+width: 100%;
+}
+
+
+.content input{
+line-height: 2rem;
+}
+.content-img img{
+margin-top: 20px;
+width: 100%;
+}
+            
+.content{
+width: 50%;
+background-color: #aa9ae7;
+color: lavender;
+padding: 20px;
+/* border-radius: 5%; */
+font-weight: bold;
+}
+.form-style{
+display: block;
+margin: 0 2rem;
+/* border-radius: 5%; */
+padding: 20px;
+line-height: 2rem;
+background-color: #aa9ae7;
+width: 50%;
+}
+.color-atas {color: white;}
+.color-bawah {color: white;}
+
+
+.form-name{
+margin-top: 20px;
+}
+.input-box{
+display: grid;
+}
+.input-box input{
+width: 70%;
+height: 40px;
+}
+input[type="text"]{
+border-radius: 5px;
+border: none;
+text-indent: 10px;
+}
+input[type="tel"]{
+border-radius: 5px;
+border: none;
+text-indent: 10px;
+}
+input[type="date"]{
+border-radius: 5px;
+border: none;
+text-indent: 5px;
+color: rgb(85, 85, 85);
+}
+::placeholder{
+text-indent: 10px;
+}
+
+.input-box #cardNumber_error,
+.input-box #fName_error{
+margin-top: 5px;
+width: 70%;
+font-size: 16px;
+color: #C62828;
+background: rgba(255, 0, 0, 0.118);
+text-align: center;
+padding: 5px 8px;
+border-radius: 3px;
+border: lavender;
+display: none;
+}
+
+/* RESPONSIVE AREA--------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+.container{
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+padding: 0;
+justify-content: center;
+align-items: center;
+}
+.full-container{        
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 100%;
+margin: -1rem;
+padding: 0;       
+justify-content: center;
+align-items: center;
+margin-right: 3rem;
+font-weight: bold;
+}
+.content{
+width: 100%;
+margin-right: 0;
+margin-left: 0;
+}
+.form-style{
+width: 100%;
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 2rem;
+/* margin-right: 50px; */
+}
+}

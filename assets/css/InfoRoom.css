@@ -1,0 +1,381 @@
+
+/* ================================================================================================================================================================= */
+/* FILE INI TERDIRI DARI GABUNGAN MENU.CSS DAN ROOM.CSS---------------------------------------------------------------------------------------------- */
+/* INFORMATIONROOM.CSS--------------------------------------------------------- */
+
+
+/* UNTUK KONTEN LANGSUNNG KE LINE 318--------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --green:#27ae60;
+  --black:#2c2c54;
+  --orange: #ffa500;
+  --sea-blue: #4dc4ff;
+  --gold: #CC8C18;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--green);
+  color:#fff;
+}
+
+body{
+    background-color: lavender;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.btn{
+  display: inline-block;
+  margin: 3rem 0 2rem 0;
+  background-color: lavender;
+  border-radius: 50px;
+  color:  #534390;
+  padding:1rem 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #aa9ae7;
+  color: lavender;
+  transform: translateY(-10px);
+}
+
+.heading{
+  text-align: center;
+  color:  #534390;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+  padding:1rem;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+.heading span{
+  color:  #534390;
+  text-transform: uppercase;
+}
+
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .image{
+  flex:1 1 40rem;
+  padding-top: 5rem;
+}
+
+.home .image img{
+  width:100%;
+}
+
+.home .content{
+  flex:1 1 40rem;
+}
+
+.home .content .btn2{
+margin-left: 60px;
+display: inline-block;
+  margin-top: 1rem;
+  background-color: #1E90CE;
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home .content span{
+  margin-left: 60px;
+  font-size: 3rem;
+  color:#1E90CE;
+}
+
+.home .content h3{
+  margin-left: 60px;
+  font-size: 5rem;
+  color: #1E90CE;
+  font-weight: bold;
+}
+
+.banner-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.banner-container .banner{
+  flex:1 1 40rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-container .banner img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.banner-container .banner .content{
+  position: absolute;
+  top:50%; left: 4%;
+  transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3{
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* ROOM.CSS FILE COPIED ------------------------------------------------------------------------------------------------------------------ */
+section.product{
+  margin: 0 0 13rem 0;
+  padding: 0;
+
+}
+    .product h2{
+      color: #aa9ae7;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: -2rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .product .box-container h3
+    {
+      color:  #534390;
+      background-color: lavender;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .product .box-container h4
+    {
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+    .product .box-container
+    {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      /* border:.1rem solid #979292; */
+      border:.1rem solid #c7c7c7;
+      box-shadow: #4141417b 2px 2px;
+      background-color:  #534390;
+      margin: 0 0;
+    }
+    .product .box-container p
+    {
+      color: white;
+    }
+    
+    .product .box-container .box
+    {
+      /* flex:1 1 30rem; */
+      text-align: center;
+      padding:2rem;
+      width: 100%;
+      border:.1rem none #979292;
+      border-radius: .5rem;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    .product .box-container .box img
+    {
+      width: 100%;
+      box-shadow: 0 0rem 0.5rem 0.4rem rgba(51, 51, 51, 0.705);
+    }
+    
+    .product .box-container .box .icons
+    {
+      position: absolute;
+      top:.5rem; right:-6rem;
+    }
+    
+    .product .box-container .box:hover .icons
+    {
+      right:1rem;
+    }
+    
+    .product .box-container .box .icons a
+    {
+      display: block;
+      height:4.5rem;
+      width:4.5rem;
+      line-height: 4.5rem;
+      font-size: 1.7rem;
+      color: #979292;
+      background:rgba(0,0,0,.05);
+      border-radius: 50%;
+      margin-top: .7rem;
+    }
+    
+    .product .box-container .box .icons a:hover
+    {
+      background-color: #1E90CE;
+      color:#fff;
+    }
+
+    .product .box-container .box-shadow{
+        background-color: #aa9ae7;
+        border: #00bafee6 solid 1px;
+        box-shadow: 0 0.5rem 1rem 0 #737373;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+    .product .box-container .box .stars
+    {
+      padding:1rem .1rem;
+      font-size: 1.7rem;
+      color:gold;
+      text-align: center;
+    }
+
+        
+    .product .box-container .box .stars2 {
+        display: flex;
+    }
+    .product .box-container .box .stars2 .side-1 {
+        width: 100%;
+    }
+    .product .box-container .box .stars2 .side-1 i{
+        display: block;
+    }
+    .product .box-container .box .stars2 .side-2 {
+        width: 100%;
+    }
+    .product .box-container .box .stars2 i
+    {
+        display: block;
+        padding:1rem 2rem;
+        font-size: 1.7rem;
+        color: white;
+        text-align: left;
+        font-weight: 700;
+    }
+    .product .box-container .box .stars2 span{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .product .box-container .box .price
+    {
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      padding:.5rem 0;
+      text-align: center;
+    }
+    
+    .product .box-container .box .price span
+    {
+      font-size: 1.5rem;
+      color:#999;
+      text-decoration: line-through;
+    }
+    
+
+
+    /* BAGIAN SEBELAH KANAN --------------------------------------------------------------------- */
+    .product .box-container .box-2{
+        width: 100%;
+        margin: 0 0 0 0 ;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+    .product .box-container .box-2 p{
+        margin: 0;
+    }
+
+
+    @media screen and (max-width: 920px ) { 
+      .header-1 .search-box-container #search-box{
+        display: none;
+      }
+      .header-1 .search-box-container #search-box i{
+        display: none;
+      }
+      .header-1 .search-box-container label{
+        display: none;
+        }
+    } 
+    @media screen and (max-width: 768px) {
+        .product .box-container .box h3{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .product .box-container .box .stars{
+            text-align: center;
+        }
+        .product .box-container .box .price{
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        .product .box-container{
+            display: block;
+        }        
+        .product .box-container .box
+        {
+          /* flex:1 1 30rem; */
+          padding:2rem 2rem 0 2rem;
+        }
+        .product .box-container .box-2{
+            margin: 2rem 0 0 0;
+            padding: 0 2rem 2rem;
+        }
+        .product .box-container .box .stars2 i
+        {
+            font-size: 1.2rem;
+            margin-left:10px ;
+        }
+        section.footer{
+          padding: 2rem;
+        }
+    }
+    @media screen and (max-width: 568px) {
+        section{
+          padding: 0;
+        }
+        .heading{
+          margin: 4rem 0;
+        }
+    }
